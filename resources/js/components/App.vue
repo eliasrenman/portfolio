@@ -7,10 +7,8 @@
             website_link=''
             email_link=''
         >
-          <template name="title">Elias Renman</template>
-          <template>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus voluptates ducimus provident nostrum eligendi recusandae iusto ea hic dolores optio laboriosam, omnis tempora corrupti, ex tempore consequuntur nam fuga!
-          </template>
+            <template #title>Elias Renman</template>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus voluptates ducimus provident nostrum eligendi recusandae iusto ea hic dolores optio laboriosam, omnis tempora corrupti, ex tempore consequuntur nam fuga!
         </page>
         <page id="page_1" 
             image_url='/images/page1.png'
@@ -19,7 +17,8 @@
             website_link=''
             email_link=''
         >
-          <template name="title">Bildterapihuset</template>
+            <template #title>Bildterapihuset</template>
+            This is a booking system that was created for my school to make it possible to book certain machinery and tools in their makerspace. It was created in collaboration with Malte Külft and Marcus Billman.
         </page>
     </div>
 </template>

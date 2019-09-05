@@ -3,13 +3,13 @@
         <img :src="image_url" alt="background image" class="page_img">
         
         <page-panel class="page_panel"
-            twitter_link=''
-            github_link='https://github.com/Abborren'
-            website_link=''
-            email_link=''
+            :twitter_link= twitter_link
+            :github_link= github_link
+            :website_link= website_link
+            :email_link= email_link
         >
-            <template name=title>
-            <slot name="title"></slot>
+            <template #_title>
+                <slot name="title"></slot>
             </template>
             <template>
                 <slot></slot>

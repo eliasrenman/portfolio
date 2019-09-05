@@ -121,7 +121,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -1415,18 +1414,22 @@ var render = function() {
             github_link: "https://github.com/Abborren",
             website_link: "",
             email_link: ""
-          }
+          },
+          scopedSlots: _vm._u([
+            {
+              key: "title",
+              fn: function() {
+                return [_vm._v("Elias Renman")]
+              },
+              proxy: true
+            }
+          ])
         },
         [
-          [_vm._v("Elias Renman")],
-          _vm._v(" "),
-          [
-            _vm._v(
-              "\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus voluptates ducimus provident nostrum eligendi recusandae iusto ea hic dolores optio laboriosam, omnis tempora corrupti, ex tempore consequuntur nam fuga!\n      "
-            )
-          ]
-        ],
-        2
+          _vm._v(
+            "\n        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus voluptates ducimus provident nostrum eligendi recusandae iusto ea hic dolores optio laboriosam, omnis tempora corrupti, ex tempore consequuntur nam fuga!\n    "
+          )
+        ]
       ),
       _vm._v(" "),
       _c(
@@ -1439,10 +1442,22 @@ var render = function() {
             github_link: "https://github.com/Abborren",
             website_link: "",
             email_link: ""
-          }
+          },
+          scopedSlots: _vm._u([
+            {
+              key: "title",
+              fn: function() {
+                return [_vm._v("Bildterapihuset")]
+              },
+              proxy: true
+            }
+          ])
         },
-        [[_vm._v("Bildterapihuset")]],
-        2
+        [
+          _vm._v(
+            "\n        This is a booking system that was created for my school to make it possible to book certain machinery and tools in their makerspace. It was created in collaboration with Malte Külft and Marcus Billman.\n    "
+          )
+        ]
       )
     ],
     1
@@ -1484,13 +1499,26 @@ var render = function() {
         {
           staticClass: "page_panel",
           attrs: {
-            twitter_link: "",
-            github_link: "https://github.com/Abborren",
-            website_link: "",
-            email_link: ""
-          }
+            twitter_link: _vm.twitter_link,
+            github_link: _vm.github_link,
+            website_link: _vm.website_link,
+            email_link: _vm.email_link
+          },
+          scopedSlots: _vm._u(
+            [
+              {
+                key: "_title",
+                fn: function() {
+                  return [_vm._t("title")]
+                },
+                proxy: true
+              }
+            ],
+            null,
+            true
+          )
         },
-        [[_vm._t("title")], _vm._v(" "), [_vm._t("default")]],
+        [_vm._v(" "), [_vm._t("default")]],
         2
       )
     ],
@@ -1520,7 +1548,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "parent" }, [
-    _c("h1", [_vm._t("title")], 2),
+    _c("h1", [_vm._t("_title")], 2),
     _vm._v(" "),
     _c("p", [_vm._t("default")], 2),
     _vm._v(" "),
