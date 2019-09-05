@@ -37,15 +37,17 @@
 <style lang="scss" scoped>
     .container {
         position: relative;
+        overflow: hidden;
     }
     .page_img {
         width: 100%;
+        object-fit: cover;
         height: 100vh;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         // overflow-x: hidden;
-        // transform: scale(1.1);
+        transform: scale(1.1);
         filter: blur(8px);
         -webkit-filter: blur(8px);
     }
@@ -56,6 +58,6 @@
         background-color: rgba(0, 0, 0, 0.4);;
         padding-left: 20px;
         padding-right: 20px;
-        max-width: 25%;
+        max-width: 30%;
     }
 </style>

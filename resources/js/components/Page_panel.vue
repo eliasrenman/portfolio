@@ -39,6 +39,18 @@
 
 
 <style lang="scss" scoped>
+    .parent > h1 {
+        font-size: 40px;
+        font-family: 'Merriweather', sans-serif;
+        font-weight: 400;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .parent > p {
+        font-size: 15px;
+        font-family: 'Merriweather', sans-serif;
+        font-weight: 200;
+    }
     .parent {
         color: white;
     }
