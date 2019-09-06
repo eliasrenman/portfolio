@@ -161,21 +161,25 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      old_pos: 0
+      current_page_index: 0
     };
   },
   methods: {
-    handleScroll: function handleScroll(event) {// TODO CODE HERE ALSO FIGURE OUT WHATS UP AND WHATS DOWN.
-    },
-    throttle: function throttle(callback, time) {
-      return lodash__WEBPACK_IMPORTED_MODULE_1___default.a.throttle(callback, time);
+    scrollPage: function scrollPage(direction_up) {
+      var index = this.current_page_index;
+
+      if (direction_up) {
+        index--;
+      } else index++;
+
+      if (index >= this.pages.length || index < 0) {
+        return;
+      }
+
+      this.current_page_index = index;
+      console.log("#page_" + index);
+      var rect = document.querySelector("#page_" + index);
     }
-  },
-  created: function created() {
-    window.addEventListener('scroll', this.throttle(this.handleScroll, 400));
-  },
-  destroyed: function destroyed() {
-    window.removeEventListener('scroll', this.throttle(this.handleScroll, 400));
   }
 });
 

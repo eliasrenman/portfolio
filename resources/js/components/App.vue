@@ -62,24 +62,24 @@
         },
         data() {
             return {
-                old_pos: 0,
+                current_page_index: 0,
             }
         },
         methods: {
-        
-            handleScroll(event) {
-                // TODO CODE HERE ALSO FIGURE OUT WHATS UP AND WHATS DOWN.
-            },
-            throttle(callback, time) { 
-                return _.throttle(callback, time)
+            scrollPage(direction_up) {
+                let index = this.current_page_index;
+                if (direction_up) {
+                    index--;
+                } else
+                    index++;
+                if (index >= this.pages.length || index < 0) {
+                    return;
+                }
+                this.current_page_index = index;
+                console.log("#page_" + index);
+                var rect = document.querySelector("#page_" + index);
             },
         },
-        created () {
-            window.addEventListener('scroll', this.throttle(this.handleScroll, 400));
-        },
-        destroyed () {
-            window.removeEventListener('scroll', this.throttle(this.handleScroll, 400));
-        }
     };
 </script>
 
