@@ -35,22 +35,17 @@
                     }
                     this.current_page_index = index;
                     console.log("#page_" + index);
-                    var rect = document.querySelector("#page_" + index);
-                    window.scrollTo(0, rect.offsetTop);
+                    var element = document.querySelector("#page_" + index);
+                    window.scrollTo({top: element.offsetTop, behavior: 'smooth'});
                 },
                 check_current_page() {
-                    
                     for (const [i, val] of this.pages_pos.entries()) {
-                        let current_y = window.pageYOffset+100;
-                        console.log(this.current_page_index == this.pages_length);
-                        let next_val = (this.current_page_index == this.pages_length ? this.pages_pos[i] * 2: this.pages_pos[i+1]);
-                        // console.log(val, ">", current_y, "<", next_val);
-                        if (current_y > val && current_y < next_val) {
-                            this.current_page_index = i;
-                            console.log("current index: ", i)    
+                        let current_y = window.pageYOffset+10;
+                        let next_val = this.pages_pos[i+1];
+                        if (current_y >= val && (!next_val || current_y < next_val)) {
+                            this.current_page_index = i;   
                             break;
                         }
-                        // let index = this.pages_pos.findIndex(i);
                     }
                 },
                 throttle(fn, wait) {
@@ -65,7 +60,8 @@
                 
             },
             created() {
-                window.addEventListener('scroll', this.throttle(this.check_current_page, 500));
+                window.addEventListener('scroll', this.throttle(this.check_current_page, 50));
+                // TODO Reuse this function to dynamically read the page_id's.
                 this.$nextTick(function () {
                     this.pages_id.forEach(element => {
                         this.pages_pos.push(document.getElementById(element).offsetTop)

@@ -42,7 +42,7 @@
     .parent > h1 {
         font-size: 40px;
         font-family: 'Merriweather', sans-serif;
-        font-weight: 400;
+        font-weight: 700;
         margin-top: 10px;
         margin-bottom: 10px;
     }

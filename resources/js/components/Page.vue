@@ -46,7 +46,6 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        // overflow-x: hidden;
         transform: scale(1.1);
         filter: blur(8px);
         -webkit-filter: blur(8px);
