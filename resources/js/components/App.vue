@@ -1,5 +1,5 @@
 <template>
-    <div v-on:scroll.passive="handleScroll()">
+    <div id="parent">
         <page id="page_0" 
             image_url='/images/page0.png'
             twitter_link=''
@@ -8,7 +8,7 @@
             email_link=''
         >
             <template #title>Elias Renman</template>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus voluptates ducimus provident nostrum eligendi recusandae iusto ea hic dolores optio laboriosam, omnis tempora corrupti, ex tempore consequuntur nam fuga!
+            I am a newly graduated high schooler that offers fullstack solutions in web development, programming and google sheets. These are some of the things I work with.        
         </page>
         <page id="page_1" 
             image_url='/images/page1.png'
@@ -47,38 +47,31 @@
             website_link=''
             email_link=''
         >
-            <template #title>Bildterapihuset</template>
+            <template #title>Google sheet solutions</template>
             I offer a variety of Google sheets solutions. One of the projects I have worked on was a spreadsheet that World best Gaming uses to track their streamers growth and follower numbers on a monthly basis. Contact me if you are in need of some kind of spreadsheet!
         </page>
+        <page-arrows pages_length=5 v-bind:pages_id="pages_id"></page-arrows>
     </div>
 </template>
 
 <script>
     import page from './Page.vue';
-    import _ from 'lodash';
+    import pageArrows from './Page_arrows.vue';
     export default {
         components: {
-            page
+            page,
+            pageArrows
         },
         data() {
             return {
-                current_page_index: 0,
+                pages_id: [
+                    "page_0",
+                    "page_1",
+                    "page_2",
+                    "page_3",
+                    "page_4",
+                    ]
             }
-        },
-        methods: {
-            scrollPage(direction_up) {
-                let index = this.current_page_index;
-                if (direction_up) {
-                    index--;
-                } else
-                    index++;
-                if (index >= this.pages.length || index < 0) {
-                    return;
-                }
-                this.current_page_index = index;
-                console.log("#page_" + index);
-                var rect = document.querySelector("#page_" + index);
-            },
         },
     };
 </script>
