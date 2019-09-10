@@ -9,16 +9,16 @@
         <div class="links_div">
             <span class="links">
                 <a v-if="twitter_link" :href="twitter_link" target="_blank" rel="noopener noreferrer">
-                    <img src="/images/icons/twitter.svg" alt="twitter link">
+                    <img src="/images/icons/twitter.svg" alt="twitter link" class="img">
                 </a>
                 <a v-if="github_link" :href="github_link" target="_blank" rel="noopener noreferrer">
-                    <img src="/images/icons/github.svg" alt="website link">
+                    <img src="/images/icons/github.svg" alt="website link" class="img">
                 </a>
-                <a v-if="website_link" :href="website_link" target="_blank" rel="noopener noreferrer">
-                    <img src="/images/icons/website.svg" alt="website link">
+                <a v-if="website_link" :href="website_link" target="_blank" rel="noopener noreferrer" >
+                    <img src="/images/icons/website.svg" alt="website link" class="img">
                 </a>
-                <a v-if="email_link" :href="'mailto:' + email_link" target="_blank" rel="noopener noreferrer">
-                    <img src="/images/icons/email.svg" alt="email link">
+                <a v-if="email_link" :href="'mailto:' + email_link" target="_blank" rel="noopener noreferrer" >
+                    <img src="/images/icons/email.svg" alt="email link" class="img">
                 </a>
             </span>
         </div>
@@ -53,8 +53,19 @@
     }
     .parent {
         color: white;
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        background-color: rgba(0, 0, 0, 0.4);;
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 30%;
+    }
+    ul {
+        padding-inline-start: 10px;
     }
     .links_div {
+        padding-top: 5px;
         widows: 100%;
         height: 30px;
     }
@@ -63,8 +74,22 @@
         left: 50%; 
         transform: translate(-50%, 0)
     }
+    
     span > a {
         padding-left: 4px;
         padding-right: 4px;
+    }
+    @media (max-width: 768px) {
+        .parent {
+            padding-top: 30%;
+            max-width: 100%;
+            height: 100%;
+            top: 0%;
+            left: 0%;
+        }
+        .img {
+            height: 25px;
+            width: auto;   
+        }
     }
 </style>

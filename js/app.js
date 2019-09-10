@@ -153,6 +153,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -162,7 +165,8 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      pages_id: ["page_0", "page_1", "page_2", "page_3", "page_4"]
+      pages_id: ["page_0", "page_1", "page_2", "page_3", "page_4"],
+      skill_list: ["Java", "Laravel (PHP)", "Type(java)-script", "NodeJS (Express)", "Vue", "Google Sheets"]
     };
   }
 });
@@ -228,7 +232,7 @@ function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArra
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
 
-function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+function _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
@@ -392,7 +396,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".container[data-v-524c0c0c] {\n  position: relative;\n  overflow: hidden;\n}\n.page_img[data-v-524c0c0c] {\n  width: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n  height: 100vh;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  transform: scale(1.1);\n  filter: blur(8px);\n  -webkit-filter: blur(8px);\n}\n.page_panel[data-v-524c0c0c] {\n  position: absolute;\n  top: 30%;\n  left: 25%;\n  background-color: rgba(0, 0, 0, 0.4);\n  padding-left: 20px;\n  padding-right: 20px;\n  max-width: 30%;\n}", ""]);
+exports.push([module.i, ".container[data-v-524c0c0c] {\n  position: relative;\n  overflow: hidden;\n}\n.page_img[data-v-524c0c0c] {\n  width: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n  height: 100vh;\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  transform: scale(1.1);\n  filter: blur(8px);\n  -webkit-filter: blur(8px);\n}", ""]);
 
 // exports
 
@@ -430,7 +434,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".parent > h1[data-v-3c306a02] {\n  font-size: 40px;\n  font-family: \"Merriweather\", sans-serif;\n  font-weight: 700;\n  margin-top: 10px;\n  margin-bottom: 10px;\n}\n.parent > p[data-v-3c306a02] {\n  font-size: 15px;\n  font-family: \"Merriweather\", sans-serif;\n  font-weight: 200;\n}\n.parent[data-v-3c306a02] {\n  color: white;\n}\n.links_div[data-v-3c306a02] {\n  widows: 100%;\n  height: 30px;\n}\n.links[data-v-3c306a02] {\n  position: absolute;\n  left: 50%;\n  transform: translate(-50%, 0);\n}\nspan > a[data-v-3c306a02] {\n  padding-left: 4px;\n  padding-right: 4px;\n}", ""]);
+exports.push([module.i, ".parent > h1[data-v-3c306a02] {\n  font-size: 40px;\n  font-family: \"Merriweather\", sans-serif;\n  font-weight: 700;\n  margin-top: 10px;\n  margin-bottom: 10px;\n}\n.parent > p[data-v-3c306a02] {\n  font-size: 15px;\n  font-family: \"Merriweather\", sans-serif;\n  font-weight: 200;\n}\n.parent[data-v-3c306a02] {\n  color: white;\n  position: absolute;\n  top: 30%;\n  left: 25%;\n  background-color: rgba(0, 0, 0, 0.4);\n  padding-left: 20px;\n  padding-right: 20px;\n  max-width: 30%;\n}\nul[data-v-3c306a02] {\n  -webkit-padding-start: 10px;\n          padding-inline-start: 10px;\n}\n.links_div[data-v-3c306a02] {\n  padding-top: 5px;\n  widows: 100%;\n  height: 30px;\n}\n.links[data-v-3c306a02] {\n  position: absolute;\n  left: 50%;\n  transform: translate(-50%, 0);\n}\nspan > a[data-v-3c306a02] {\n  padding-left: 4px;\n  padding-right: 4px;\n}\n@media (max-width: 768px) {\n.parent[data-v-3c306a02] {\n    padding-top: 30%;\n    max-width: 100%;\n    height: 100%;\n    top: 0%;\n    left: 0%;\n}\n.img[data-v-3c306a02] {\n    height: 25px;\n    width: auto;\n}\n}", ""]);
 
 // exports
 
@@ -2356,9 +2360,7 @@ Object.defineProperty(MapPoly.prototype, Symbol.toStringTag, d('c', 'Map'));
 "use strict";
 
 
-module.exports = __webpack_require__(/*! ./is-implemented */ "./node_modules/es6-symbol/is-implemented.js")()
-	? __webpack_require__(/*! es5-ext/global */ "./node_modules/es5-ext/global.js").Symbol
-	: __webpack_require__(/*! ./polyfill */ "./node_modules/es6-symbol/polyfill.js");
+module.exports = __webpack_require__(/*! ./is-implemented */ "./node_modules/es6-symbol/is-implemented.js")() ? Symbol : __webpack_require__(/*! ./polyfill */ "./node_modules/es6-symbol/polyfill.js");
 
 
 /***/ }),
@@ -2373,16 +2375,13 @@ module.exports = __webpack_require__(/*! ./is-implemented */ "./node_modules/es6
 "use strict";
 
 
-var global     = __webpack_require__(/*! es5-ext/global */ "./node_modules/es5-ext/global.js")
-  , validTypes = { object: true, symbol: true };
+var validTypes = { object: true, symbol: true };
 
 module.exports = function () {
-	var Symbol = global.Symbol;
 	var symbol;
-	if (typeof Symbol !== "function") return false;
-	symbol = Symbol("test symbol");
-	try { String(symbol); }
-	catch (e) { return false; }
+	if (typeof Symbol !== 'function') return false;
+	symbol = Symbol('test symbol');
+	try { String(symbol); } catch (e) { return false; }
 
 	// Return 'true' also for polyfills
 	if (!validTypes[typeof Symbol.iterator]) return false;
@@ -2405,134 +2404,12 @@ module.exports = function () {
 "use strict";
 
 
-module.exports = function (value) {
-	if (!value) return false;
-	if (typeof value === "symbol") return true;
-	if (!value.constructor) return false;
-	if (value.constructor.name !== "Symbol") return false;
-	return value[value.constructor.toStringTag] === "Symbol";
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/es6-symbol/lib/private/generate-name.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/es6-symbol/lib/private/generate-name.js ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var d = __webpack_require__(/*! d */ "./node_modules/d/index.js");
-
-var create = Object.create, defineProperty = Object.defineProperty, objPrototype = Object.prototype;
-
-var created = create(null);
-module.exports = function (desc) {
-	var postfix = 0, name, ie11BugWorkaround;
-	while (created[desc + (postfix || "")]) ++postfix;
-	desc += postfix || "";
-	created[desc] = true;
-	name = "@@" + desc;
-	defineProperty(
-		objPrototype,
-		name,
-		d.gs(null, function (value) {
-			// For IE11 issue see:
-			// https://connect.microsoft.com/IE/feedbackdetail/view/1928508/
-			//    ie11-broken-getters-on-dom-objects
-			// https://github.com/medikoo/es6-symbol/issues/12
-			if (ie11BugWorkaround) return;
-			ie11BugWorkaround = true;
-			defineProperty(this, name, d(value));
-			ie11BugWorkaround = false;
-		})
-	);
-	return name;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/es6-symbol/lib/private/setup/standard-symbols.js":
-/*!***********************************************************************!*\
-  !*** ./node_modules/es6-symbol/lib/private/setup/standard-symbols.js ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var d            = __webpack_require__(/*! d */ "./node_modules/d/index.js")
-  , NativeSymbol = __webpack_require__(/*! es5-ext/global */ "./node_modules/es5-ext/global.js").Symbol;
-
-module.exports = function (SymbolPolyfill) {
-	return Object.defineProperties(SymbolPolyfill, {
-		// To ensure proper interoperability with other native functions (e.g. Array.from)
-		// fallback to eventual native implementation of given symbol
-		hasInstance: d(
-			"", (NativeSymbol && NativeSymbol.hasInstance) || SymbolPolyfill("hasInstance")
-		),
-		isConcatSpreadable: d(
-			"",
-			(NativeSymbol && NativeSymbol.isConcatSpreadable) ||
-				SymbolPolyfill("isConcatSpreadable")
-		),
-		iterator: d("", (NativeSymbol && NativeSymbol.iterator) || SymbolPolyfill("iterator")),
-		match: d("", (NativeSymbol && NativeSymbol.match) || SymbolPolyfill("match")),
-		replace: d("", (NativeSymbol && NativeSymbol.replace) || SymbolPolyfill("replace")),
-		search: d("", (NativeSymbol && NativeSymbol.search) || SymbolPolyfill("search")),
-		species: d("", (NativeSymbol && NativeSymbol.species) || SymbolPolyfill("species")),
-		split: d("", (NativeSymbol && NativeSymbol.split) || SymbolPolyfill("split")),
-		toPrimitive: d(
-			"", (NativeSymbol && NativeSymbol.toPrimitive) || SymbolPolyfill("toPrimitive")
-		),
-		toStringTag: d(
-			"", (NativeSymbol && NativeSymbol.toStringTag) || SymbolPolyfill("toStringTag")
-		),
-		unscopables: d(
-			"", (NativeSymbol && NativeSymbol.unscopables) || SymbolPolyfill("unscopables")
-		)
-	});
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/es6-symbol/lib/private/setup/symbol-registry.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/es6-symbol/lib/private/setup/symbol-registry.js ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var d              = __webpack_require__(/*! d */ "./node_modules/d/index.js")
-  , validateSymbol = __webpack_require__(/*! ../../../validate-symbol */ "./node_modules/es6-symbol/validate-symbol.js");
-
-var registry = Object.create(null);
-
-module.exports = function (SymbolPolyfill) {
-	return Object.defineProperties(SymbolPolyfill, {
-		for: d(function (key) {
-			if (registry[key]) return registry[key];
-			return (registry[key] = SymbolPolyfill(String(key)));
-		}),
-		keyFor: d(function (symbol) {
-			var key;
-			validateSymbol(symbol);
-			for (key in registry) {
-				if (registry[key] === symbol) return key;
-			}
-			return undefined;
-		})
-	});
+module.exports = function (x) {
+	if (!x) return false;
+	if (typeof x === 'symbol') return true;
+	if (!x.constructor) return false;
+	if (x.constructor.name !== 'Symbol') return false;
+	return (x[x.constructor.toStringTag] === 'Symbol');
 };
 
 
@@ -2550,32 +2427,48 @@ module.exports = function (SymbolPolyfill) {
 
 
 
-var d                    = __webpack_require__(/*! d */ "./node_modules/d/index.js")
-  , validateSymbol       = __webpack_require__(/*! ./validate-symbol */ "./node_modules/es6-symbol/validate-symbol.js")
-  , NativeSymbol         = __webpack_require__(/*! es5-ext/global */ "./node_modules/es5-ext/global.js").Symbol
-  , generateName         = __webpack_require__(/*! ./lib/private/generate-name */ "./node_modules/es6-symbol/lib/private/generate-name.js")
-  , setupStandardSymbols = __webpack_require__(/*! ./lib/private/setup/standard-symbols */ "./node_modules/es6-symbol/lib/private/setup/standard-symbols.js")
-  , setupSymbolRegistry  = __webpack_require__(/*! ./lib/private/setup/symbol-registry */ "./node_modules/es6-symbol/lib/private/setup/symbol-registry.js");
+var d              = __webpack_require__(/*! d */ "./node_modules/d/index.js")
+  , validateSymbol = __webpack_require__(/*! ./validate-symbol */ "./node_modules/es6-symbol/validate-symbol.js")
 
-var create = Object.create
-  , defineProperties = Object.defineProperties
-  , defineProperty = Object.defineProperty;
+  , create = Object.create, defineProperties = Object.defineProperties
+  , defineProperty = Object.defineProperty, objPrototype = Object.prototype
+  , NativeSymbol, SymbolPolyfill, HiddenSymbol, globalSymbols = create(null)
+  , isNativeSafe;
 
-var SymbolPolyfill, HiddenSymbol, isNativeSafe;
-
-if (typeof NativeSymbol === "function") {
+if (typeof Symbol === 'function') {
+	NativeSymbol = Symbol;
 	try {
 		String(NativeSymbol());
 		isNativeSafe = true;
 	} catch (ignore) {}
-} else {
-	NativeSymbol = null;
 }
+
+var generateName = (function () {
+	var created = create(null);
+	return function (desc) {
+		var postfix = 0, name, ie11BugWorkaround;
+		while (created[desc + (postfix || '')]) ++postfix;
+		desc += (postfix || '');
+		created[desc] = true;
+		name = '@@' + desc;
+		defineProperty(objPrototype, name, d.gs(null, function (value) {
+			// For IE11 issue see:
+			// https://connect.microsoft.com/IE/feedbackdetail/view/1928508/
+			//    ie11-broken-getters-on-dom-objects
+			// https://github.com/medikoo/es6-symbol/issues/12
+			if (ie11BugWorkaround) return;
+			ie11BugWorkaround = true;
+			defineProperty(this, name, d(value));
+			ie11BugWorkaround = false;
+		}));
+		return name;
+	};
+}());
 
 // Internal constructor (not one exposed) for creating Symbol instances.
 // This one is used to ensure that `someSymbol instanceof Symbol` always return false
 HiddenSymbol = function Symbol(description) {
-	if (this instanceof HiddenSymbol) throw new TypeError("Symbol is not a constructor");
+	if (this instanceof HiddenSymbol) throw new TypeError('Symbol is not a constructor');
 	return SymbolPolyfill(description);
 };
 
@@ -2583,56 +2476,71 @@ HiddenSymbol = function Symbol(description) {
 // (returns instances of HiddenSymbol)
 module.exports = SymbolPolyfill = function Symbol(description) {
 	var symbol;
-	if (this instanceof Symbol) throw new TypeError("Symbol is not a constructor");
+	if (this instanceof Symbol) throw new TypeError('Symbol is not a constructor');
 	if (isNativeSafe) return NativeSymbol(description);
 	symbol = create(HiddenSymbol.prototype);
-	description = description === undefined ? "" : String(description);
+	description = (description === undefined ? '' : String(description));
 	return defineProperties(symbol, {
-		__description__: d("", description),
-		__name__: d("", generateName(description))
+		__description__: d('', description),
+		__name__: d('', generateName(description))
 	});
 };
+defineProperties(SymbolPolyfill, {
+	for: d(function (key) {
+		if (globalSymbols[key]) return globalSymbols[key];
+		return (globalSymbols[key] = SymbolPolyfill(String(key)));
+	}),
+	keyFor: d(function (s) {
+		var key;
+		validateSymbol(s);
+		for (key in globalSymbols) if (globalSymbols[key] === s) return key;
+	}),
 
-setupStandardSymbols(SymbolPolyfill);
-setupSymbolRegistry(SymbolPolyfill);
+	// To ensure proper interoperability with other native functions (e.g. Array.from)
+	// fallback to eventual native implementation of given symbol
+	hasInstance: d('', (NativeSymbol && NativeSymbol.hasInstance) || SymbolPolyfill('hasInstance')),
+	isConcatSpreadable: d('', (NativeSymbol && NativeSymbol.isConcatSpreadable) ||
+		SymbolPolyfill('isConcatSpreadable')),
+	iterator: d('', (NativeSymbol && NativeSymbol.iterator) || SymbolPolyfill('iterator')),
+	match: d('', (NativeSymbol && NativeSymbol.match) || SymbolPolyfill('match')),
+	replace: d('', (NativeSymbol && NativeSymbol.replace) || SymbolPolyfill('replace')),
+	search: d('', (NativeSymbol && NativeSymbol.search) || SymbolPolyfill('search')),
+	species: d('', (NativeSymbol && NativeSymbol.species) || SymbolPolyfill('species')),
+	split: d('', (NativeSymbol && NativeSymbol.split) || SymbolPolyfill('split')),
+	toPrimitive: d('', (NativeSymbol && NativeSymbol.toPrimitive) || SymbolPolyfill('toPrimitive')),
+	toStringTag: d('', (NativeSymbol && NativeSymbol.toStringTag) || SymbolPolyfill('toStringTag')),
+	unscopables: d('', (NativeSymbol && NativeSymbol.unscopables) || SymbolPolyfill('unscopables'))
+});
 
 // Internal tweaks for real symbol producer
 defineProperties(HiddenSymbol.prototype, {
 	constructor: d(SymbolPolyfill),
-	toString: d("", function () { return this.__name__; })
+	toString: d('', function () { return this.__name__; })
 });
 
 // Proper implementation of methods exposed on Symbol.prototype
 // They won't be accessible on produced symbol instances as they derive from HiddenSymbol.prototype
 defineProperties(SymbolPolyfill.prototype, {
-	toString: d(function () { return "Symbol (" + validateSymbol(this).__description__ + ")"; }),
+	toString: d(function () { return 'Symbol (' + validateSymbol(this).__description__ + ')'; }),
 	valueOf: d(function () { return validateSymbol(this); })
 });
-defineProperty(
-	SymbolPolyfill.prototype,
-	SymbolPolyfill.toPrimitive,
-	d("", function () {
-		var symbol = validateSymbol(this);
-		if (typeof symbol === "symbol") return symbol;
-		return symbol.toString();
-	})
-);
-defineProperty(SymbolPolyfill.prototype, SymbolPolyfill.toStringTag, d("c", "Symbol"));
+defineProperty(SymbolPolyfill.prototype, SymbolPolyfill.toPrimitive, d('', function () {
+	var symbol = validateSymbol(this);
+	if (typeof symbol === 'symbol') return symbol;
+	return symbol.toString();
+}));
+defineProperty(SymbolPolyfill.prototype, SymbolPolyfill.toStringTag, d('c', 'Symbol'));
 
 // Proper implementaton of toPrimitive and toStringTag for returned symbol instances
-defineProperty(
-	HiddenSymbol.prototype, SymbolPolyfill.toStringTag,
-	d("c", SymbolPolyfill.prototype[SymbolPolyfill.toStringTag])
-);
+defineProperty(HiddenSymbol.prototype, SymbolPolyfill.toStringTag,
+	d('c', SymbolPolyfill.prototype[SymbolPolyfill.toStringTag]));
 
 // Note: It's important to define `toPrimitive` as last one, as some implementations
 // implement `toPrimitive` natively without implementing `toStringTag` (or other specified symbols)
 // And that may invoke error in definition flow:
 // See: https://github.com/medikoo/es6-symbol/issues/13#issuecomment-164146149
-defineProperty(
-	HiddenSymbol.prototype, SymbolPolyfill.toPrimitive,
-	d("c", SymbolPolyfill.prototype[SymbolPolyfill.toPrimitive])
-);
+defineProperty(HiddenSymbol.prototype, SymbolPolyfill.toPrimitive,
+	d('c', SymbolPolyfill.prototype[SymbolPolyfill.toPrimitive]));
 
 
 /***/ }),
@@ -5139,7 +5047,14 @@ var render = function() {
         },
         [
           _vm._v(
-            "\n        I am a newly graduated high schooler that offers fullstack solutions in web development, programming and google sheets. These are some of the things I work with.        \n    "
+            "\n        I am a newly graduated high schooler that offers fullstack solutions in web development, programming and google sheets. These are some of the things I work with.        \n        "
+          ),
+          _c(
+            "ul",
+            _vm._l(_vm.skill_list, function(item) {
+              return _c("li", { key: item }, [_vm._v(_vm._s(item))])
+            }),
+            0
           )
         ]
       ),
@@ -5402,6 +5317,7 @@ var render = function() {
               },
               [
                 _c("img", {
+                  staticClass: "img",
                   attrs: {
                     src: "/images/icons/twitter.svg",
                     alt: "twitter link"
@@ -5423,6 +5339,7 @@ var render = function() {
               },
               [
                 _c("img", {
+                  staticClass: "img",
                   attrs: {
                     src: "/images/icons/github.svg",
                     alt: "website link"
@@ -5444,6 +5361,7 @@ var render = function() {
               },
               [
                 _c("img", {
+                  staticClass: "img",
                   attrs: {
                     src: "/images/icons/website.svg",
                     alt: "website link"
@@ -5465,6 +5383,7 @@ var render = function() {
               },
               [
                 _c("img", {
+                  staticClass: "img",
                   attrs: { src: "/images/icons/email.svg", alt: "email link" }
                 })
               ]
@@ -19383,8 +19302,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /mnt/e/code/JS_Projects/portfolio/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /mnt/e/code/JS_Projects/portfolio/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /mnt/c/Code/school/Portfolio/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /mnt/c/Code/school/Portfolio/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

@@ -50,13 +50,4 @@
         filter: blur(8px);
         -webkit-filter: blur(8px);
     }
-    .page_panel {
-        position: absolute;
-        top: 30%;
-        left: 25%;
-        background-color: rgba(0, 0, 0, 0.4);;
-        padding-left: 20px;
-        padding-right: 20px;
-        max-width: 30%;
-    }
 </style>

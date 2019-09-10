@@ -9,6 +9,9 @@
         >
             <template #title>Elias Renman</template>
             I am a newly graduated high schooler that offers fullstack solutions in web development, programming and google sheets. These are some of the things I work with.        
+            <ul>
+                <li v-for="item in skill_list" :key="item">{{item}}</li>
+            </ul>
         </page>
         <page id="page_1" 
             image_url='/images/page1.png'
@@ -70,7 +73,15 @@
                     "page_2",
                     "page_3",
                     "page_4",
-                    ]
+                ],
+                skill_list:  [
+                    "Java",
+                    "Laravel (PHP)",
+                    "Type(java)-script",
+                    "NodeJS (Express)",
+                    "Vue",
+                    "Google Sheets",
+                ]
             }
         },
     };
