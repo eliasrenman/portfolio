@@ -1,7 +1,7 @@
 <template>
   <div class="container">
       <img :src="domain_url + '/images/icons/arrow_up.svg'" v-on:click="scrollUp" class="d-block" alt="scroll up one page">
-      <img :src="domain_url + '/images/icons/arrow_down.svg'" v-on:click="scrollDown" alt="scroll up one page">
+      <img :src="domain_url + '/images/icons/arrow_down.svg'" v-on:click="scrollDown" alt="scroll down one page">
   </div>
 </template>
 
