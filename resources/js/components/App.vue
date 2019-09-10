@@ -1,7 +1,7 @@
 <template>
     <div id="parent">
         <page id="page_0" 
-            :image_url="domain_url + '/images/page0.png'"
+            :image_url="domain_url + '/images/page0.webp'"
             twitter_link=''
             github_link='https://github.com/Abborren'
             website_link=''
@@ -14,7 +14,7 @@
             </ul>
         </page>
         <page id="page_1" 
-            :image_url="domain_url + '/images/page1.png'"
+            :image_url="domain_url + '/images/page1.webp'"
             twitter_link=''
             github_link='https://github.com/Abborren/Makerspace_booking'
             website_link='http://makerspace.umea-ntig.se/'
@@ -24,7 +24,7 @@
             This is a booking system that was created for my school to make it possible to book certain machinery and tools in their makerspace. It was created in collaboration with Malte Külft and Marcus Billman.
         </page>
         <page id="page_2" 
-            :image_url="domain_url + '/images/page2.png'"
+            :image_url="domain_url + '/images/page2.webp'"
             twitter_link=''
             github_link='https://github.com/Abborren/Slutprojekt_programmering_2'
             website_link=''
@@ -34,7 +34,7 @@
             The graduation project in my programming course i created a Database handler in Java for interfacing with different databases much like MYSQL workbench or Sequel pro, please check it out on Github.        
         </page>
         <page id="page_3" 
-            :image_url="domain_url + '/images/page3.png'"
+            :image_url="domain_url + '/images/page3.webp'"
             twitter_link=''
             github_link='https://github.com/Abborren/Bildterapihuset'
             website_link='https://bildterapihusetshowcase.herokuapp.com/'
@@ -44,7 +44,7 @@
             Bildterapihuset was a renovation of a website that was written in a web dev course on the request of company that owned the old website. This was written in Nodejs and express, Check out the source code on Github or check the website on the right button below.
         </page>
         <page id="page_4" 
-            :image_url="domain_url + '/images/page4.png'"
+            :image_url="domain_url + '/images/page4.webp'"
             twitter_link=''
             github_link=''
             website_link=''
