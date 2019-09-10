@@ -9,16 +9,16 @@
         <div class="links_div">
             <span class="links">
                 <a v-if="twitter_link" :href="twitter_link" target="_blank" rel="noopener noreferrer">
-                    <img src="/images/icons/twitter.svg" alt="twitter link" class="img">
+                    <img :src="domain_url + '/images/icons/twitter.svg'" alt="twitter link" class="img">
                 </a>
                 <a v-if="github_link" :href="github_link" target="_blank" rel="noopener noreferrer">
-                    <img src="/images/icons/github.svg" alt="website link" class="img">
+                    <img :src="domain_url + '/images/icons/github.svg'" alt="website link" class="img">
                 </a>
                 <a v-if="website_link" :href="website_link" target="_blank" rel="noopener noreferrer" >
-                    <img src="/images/icons/website.svg" alt="website link" class="img">
+                    <img :src="domain_url + '/images/icons/website.svg'" alt="website link" class="img">
                 </a>
                 <a v-if="email_link" :href="'mailto:' + email_link" target="_blank" rel="noopener noreferrer" >
-                    <img src="/images/icons/email.svg" alt="email link" class="img">
+                    <img :src="domain_url + '/images/icons/email.svg'" alt="email link" class="img">
                 </a>
             </span>
         </div>
@@ -34,6 +34,11 @@
             website_link: '',
             email_link: '',
         },
+        computed: {
+            domain_url() {
+                return window.domain_url;
+            }
+        }
     }
 </script>
 

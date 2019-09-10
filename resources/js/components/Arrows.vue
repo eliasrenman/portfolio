@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-      <img src="/images/icons/arrow_up.svg" v-on:click="scrollUp" class="d-block">
-      <img src="/images/icons/arrow_down.svg" v-on:click="scrollDown">
+      <img :src="domain_url + '/images/icons/arrow_up.svg'" v-on:click="scrollUp" class="d-block">
+      <img :src="domain_url + '/images/icons/arrow_down.svg'" v-on:click="scrollDown">
   </div>
 </template>
 
@@ -34,7 +34,7 @@
                         return;
                     }
                     this.current_page_index = index;
-                    console.log("#page_" + index);
+                    // console.log("#page_" + index);
                     var element = document.querySelector("#page_" + index);
                     window.scrollTo({top: element.offsetTop, behavior: 'smooth'});
                 },
@@ -61,13 +61,17 @@
             },
             created() {
                 window.addEventListener('scroll', this.throttle(this.check_current_page, 50));
-                // TODO Reuse this function to dynamically read the page_id's.
                 this.$nextTick(function () {
                     this.pages_id.forEach(element => {
                         this.pages_pos.push(document.getElementById(element).offsetTop)
                     });
                 })
             },
+            computed: {
+                domain_url() {
+                    return window.domain_url;
+                }
+            }
     }
 </script>
 <style lang="scss" scoped>
