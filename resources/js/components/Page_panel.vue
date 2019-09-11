@@ -44,6 +44,10 @@
 
 
 <style lang="scss" scoped>
+        .img {
+            height: 25px;
+            width: auto;   
+        }
     .parent > h1 {
         font-size: 40px;
         font-family: 'Merriweather', sans-serif;
@@ -52,7 +56,7 @@
         margin-bottom: 10px;
     }
     .parent > p {
-        font-size: 15px;
+        font-size: 20px;
         font-family: 'Merriweather', sans-serif;
         font-weight: 200;
     }
@@ -62,8 +66,8 @@
         top: 30%;
         left: 25%;
         background-color: rgba(0, 0, 0, 0.4);;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 25px;
+        padding-right: 25px;
         max-width: 30%;
     }
     ul {
@@ -71,7 +75,7 @@
     }
     .links_div {
         padding-top: 5px;
-        widows: 100%;
+        padding-bottom: 5px;
         height: 30px;
     }
     .links {
@@ -92,9 +96,8 @@
             top: 0%;
             left: 0%;
         }
-        .img {
-            height: 25px;
-            width: auto;   
+        .parent > p {
+            font-size: 15px;
         }
     }
 </style>

@@ -85,4 +85,7 @@
         display: block;
         margin-bottom: 10px;
     }
+    img:hover {
+        cursor: pointer
+    }
 </style>

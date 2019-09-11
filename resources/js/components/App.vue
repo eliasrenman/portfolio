@@ -17,7 +17,7 @@
             :image_url="domain_url + '/images/page1.webp'"
             twitter_link=''
             github_link='https://github.com/Abborren/Makerspace_booking'
-            website_link='http://makerspace.umea-ntig.se/'
+            website_link=''
             email_link=''
         >
             <template #title>Makerspace bookingsystem</template>
