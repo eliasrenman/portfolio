@@ -8,7 +8,7 @@
             email_link='elias.renman00@gmail.com'
         >
             <template #title>Elias Renman</template>
-            I am a newly graduated high schooler that offers fullstack solutions in web development, programming and google sheets. These are some of the things I work with.        
+            I am currently studying web development and programming. I offer fullstack solutions in web development, programming and google sheets. These are some of the things I work with.        
             <ul>
                 <li v-for="item in skill_list" :key="item">{{item}}</li>
             </ul>
@@ -76,6 +76,7 @@
                 ],
                 skill_list:  [
                     "Java",
+                    "Python",
                     "Laravel (PHP)",
                     "Type(java)-script",
                     "NodeJS (Express)",
