@@ -31,7 +31,7 @@
             email_link=''
         >
             <template #title>Ntig Umeå Lan booking system</template>
-             A booking system built for the Lan event that occurs twice a year at Nti Gymnasiet in umeå, This enables the participants to get live info and easily register via the website. It also removes the pain of working with spreadsheets for the organizers to handle the organizing of events.      
+             A booking system built for the Lan event that occurs twice a year at Nti Gymnasiet in umeå. It enables the participants to get live info and easily register via the website. It also removes the pain of having to work with spreadsheets for the organizers to handle the organizing of events.      
         </page>
         <page id="page_3" 
             :image_url="domain_url + '/images/page3.webp'"
